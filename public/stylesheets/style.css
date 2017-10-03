@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding:0;
+}
+header{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+header h1{
+    font-size: 2.5rem;
+    color: #008300;
+}
+header nav{
+    background-color: white;
+    width: 100%;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+   
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+}
+nav ul a{
+    padding-right: 10px;
+}
+nav ul li a:hover{
+    color: rgba(0, 0, 0, 0.6);
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.wrapper{
+    width: 1024px;
+    height: 100vh;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.url-news{
+    height: 70px;
+    display: flex;
+}
+.url-news>a>img{
+    margin: 10px;
+    width:24px;
+    height: 24px;
+    border-radius: 50px;
+}
+.url-news>a{
+    color:black;
+    font-size: 12px;
+    display: flex;
+}
+.url-news>a>p{ 
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 5px;
+    width:100%;
+}
+.row{
+    margin-top: 50px;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card,.col{
+    width:100%;
+  
+}
+.card .card-content{
+    font-size: 12px;
+    height: 96px;
+    max-height: 120px;
+    overflow: hidden;
+    white-space: wrap;
+    text-overflow: ellipsis;
+}
+.col{
+    padding: 0px;
+    margin: 0px;
+}
+#title-news{
+    margin: 10px;
+}
+hr{
+    border: none; /* Убираем границу для браузера Firefox */
+    color: #e0e0e0; /* Цвет линии для остальных браузеров */
+    background-color: #e0e0e0; /* Цвет линии для браузера Firefox и Opera */
+    height: 1px;
+}
+.card-image>img{
+    height: 200px;
+}
+
+.card.good-news div a{
+    color: #008300;
+}
+
+.card.bad-news div a{
+    color: #e40000;
+}
